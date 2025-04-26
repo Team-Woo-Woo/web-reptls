@@ -57,10 +57,18 @@ export default defineNuxtConfig({
     },
 
     experimental: {
-        // inlineSSRStyles: false,
+        inlineSSRStyles: false,
+    },
+
+    build: {
+        transpile: ['vue3-text-clamp', 'resize-detector']
     },
 
     hooks: {
+        // 'content:file:afterParse'(ctx) {
+        //     console.log('hook');
+        //     console.log(ctx);
+        // },
         'build:done': () => {
             const inklinePath = path.resolve('.nuxt', 'inkline.mjs');
             if (fs.existsSync(inklinePath)) {

@@ -10,16 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@inkline/inkline": "^4.2.1",
     "@nuxt/content": "3.4.0",
     "@nuxt/image": "1.10.0",
     "nuxt": "^3.16.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
-    "@inkline/inkline": "^4.2.1"
+    "vue3-text-clamp": "^0.1.2"
   },
   "devDependencies": {
-    "@inkline/plugin": "^1.5.2",
     "@inkline/config": "^1.9.1",
+    "@inkline/plugin": "^1.5.2",
     "sass": "^1.64.0"
   }
 }

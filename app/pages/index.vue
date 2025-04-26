@@ -8,7 +8,6 @@ const background = computed(() => {
 <template>
   <ILayoutContent>
     <IContainer fluid :style="background" class="adjusted">
-<!--    <IContainer fluid class="adjusted">-->
       <IContainer class="main-header _display:flex _align-items:center">
         <div class="_flex-grow:1">
           <div class="d1 _text-align:center _color:black _text:uppercase _text-decoration:underline _margin-bottom:2" style="text-shadow: 2px 2px 6px lawngreen">
@@ -51,18 +50,15 @@ const background = computed(() => {
   position: absolute;
   margin-top: -110px;
 }
-.navbar-header {
-  z-index: 2;
-}
 .transparent-black-bg {
   background-color: rgba(10,10,10,0.8);
 }
 .layout-content > .container.adjusted .main-header {
-  margin-top: -110px;
+  margin-top: -74px;
   padding: 90px 0 90px 0;
   min-height: 100vh;
 }
 .main-header {
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 74px);
 }
 </style>
